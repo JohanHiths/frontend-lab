@@ -1,0 +1,25 @@
+
+.nav-recept{
+    border-bottom: 1px solid black;
+}
+
+.form-recept{
+    border-radius: 5px;
+}
+
+input[type="text"]{
+    border-radius: 100px;
+    width:500px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+input:hover{
+    border: 3px solid #274e02;
+}
+
+.container{
+     position: relative;
+  text-align: center;
+  color: white;
+}
