@@ -1,1 +1,120 @@
-<a href="index.html">Start</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chokladbollar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+</head>
+  <nav class="navbar">
+        <div class="navdiv">
+
+            <div class="logo">
+                <a href="index.html">Hem🏡</a>
+            </div>
+
+            <div id="content-area"></div>
+
+            <div class="search-container">
+                <form
+                >
+                    <input
+                            type="text"
+                            name="searchTerm"
+                            placeholder="Sök..."
+                    >
+
+                    <button type="submit">
+                        🔎</i>
+                    </button>
+                </form>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-buttons"><a  class="nav-a">Home</a></li>
+                <li>
+                    <a th:href="@{/contact}" class="nav-a">Contact
+                    </a>
+                </li>
+
+                <li sec:authorize="!isAuthenticated()">
+                    <a th:href="@{/login}" class="nav-a">Logga in</a>
+                </li>
+                <li>
+                    <a th:href="@{/register}" class="btn-register">Register</a>
+                </li>
+               
+
+            </ul>
+
+        </div>
+    </nav>
+<body>
+
+   <div class="widget-container">
+
+    <div class="widget-left">
+        <img
+            src="bilder/recept-chokladboll-scaled.jpg"
+            alt="Chokladbollar"
+            class="widget-image"
+        >
+    </div>
+
+    <div class="widget-right">
+
+        <h1 class="widget-h1">Chokladbollar</h1>
+
+        <div class="widget-info">
+            <div class="widget-emoji">🍳 10 stycken</div>
+            <div class="widget-emoji">⏳ 60 min</div>
+            <div class="widget-emoji">🎂 Bak och dessert</div>
+        </div>
+
+        <p class="widget-description">
+            Chokladbollar är gött!
+        </p>
+
+    </div>
+
+</div>
+
+
+<h1>Ingredienser</h1>
+<label class="ingredient">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <span class="ingredient-text">1 msk smör</span>
+</label>
+
+<label class="ingredient">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <span class="ingredient-text">2 dl strösocker</span>
+</label>
+<label class="ingredient">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <span class="ingredient-text">3 dl havregryn</span>
+</label>
+<label class="ingredient">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <span class="ingredient-text">3 msk kakao</span>
+</label>
+<label class="ingredient">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <span class="ingredient-text">3 msk kallt starkt kaffe</span>
+</label>
+
+
+</body>
+</html>

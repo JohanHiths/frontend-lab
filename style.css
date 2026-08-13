@@ -59,8 +59,9 @@ h2{
   color:darkgreen;
   border-color:darkgreen;
 }
-input:hover{
+input:focus {
     border: 3px solid #274e02;
+    outline: none;
 }
 
 .container{
@@ -94,6 +95,5 @@ input:hover{
   margin: 10px;
   padding: 10px;
   display: inline-block;
-  border-radius: px;
-
+ 
 }

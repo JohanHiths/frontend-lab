@@ -7,11 +7,56 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<header th:fragment="header" xmlns:sec="http://www.w3.org/1999/xhtml">
+    <nav class="navbar">
+        <div class="navdiv">
+
+            <div class="logo">
+                <a href="index.html">Hem🏡</a>
+            </div>
+
+            <div id="content-area"></div>
+
+            <div class="search-container">
+                <form
+                >
+                    <input
+                            type="text"
+                            name="searchTerm"
+                            placeholder="Sök..."
+                    >
+
+                    <button type="submit">
+                        🔎</i>
+                    </button>
+                </form>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-buttons"><a  class="nav-a">Home</a></li>
+                <li>
+                    <a th:href="@{/contact}" class="nav-a">Contact
+                    </a>
+                </li>
+
+                <li sec:authorize="!isAuthenticated()">
+                    <a th:href="@{/login}" class="nav-a">Logga in</a>
+                </li>
+                <li>
+                    <a th:href="@{/register}" class="btn-register">Register</a>
+                </li>
+              
+
+            </ul>
+
+        </div>
+    </nav>
+</header>
 <body>
     <nav class="nav-recept">
   <ol>
-    <li class="li-recept"><a href="recept.html">Recept</a></li>
-    <li class="li-recept"><a href="nyhetsbrev.html">Nyhetsbrev  </a></li>
+    <li class="li-recept"><a href="recept.html" class="li-a">Recept</a></li>
+    <li class="li-recept"><a href="nyhetsbrev.html" class="li-a">Nyhetsbrev  </a></li>
   </ol>
 </nav>
 <section class="hero">
@@ -25,10 +70,8 @@
   </i></button>
 </form>
 
-<a>Billigt</a>
-<a>Snabbt</a>
-<a href="chokladbollar.html">Chokladbollar</a>
-<a href="pannkakor.html">Pannkakor</a>
+<a href="chokladbollar.html" class="li-a">Chokladbollar</a>
+<a href="pannkakor.html" class="li-a">Pannkakor</a>
 <div>
 </div>
 </div>
