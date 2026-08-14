@@ -8,49 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
 </head>
-  <nav class="navbar">
-        <div class="navdiv">
-
-            <div class="logo">
-                <a href="index.html">Hem🏡</a>
-            </div>
-
-            <div id="content-area"></div>
-
-            <div class="search-container">
-                <form
-                >
-                    <input
-                            type="text"
-                            name="searchTerm"
-                            placeholder="Sök..."
-                    >
-
-                    <button type="submit">
-                        🔎</i>
-                    </button>
-                </form>
-            </div>
-
-            <ul class="nav-links">
-                <li class="nav-buttons"><a  class="nav-a">Home</a></li>
-                <li>
-                    <a th:href="@{/contact}" class="nav-a">Contact
-                    </a>
-                </li>
-
-                <li sec:authorize="!isAuthenticated()">
-                    <a th:href="@{/login}" class="nav-a">Logga in</a>
-                </li>
-                <li>
-                    <a th:href="@{/register}" class="btn-register">Register</a>
-                </li>
+  <nav class="nav-recept">
+  <ol>
+     <li class="li-recept">
+                    <a href="index.html" class="nav-a">Home🏡</a></li>
+                <li class="li-recept">
+    <li class="li-recept"><a href="recept.html" class="nav-a">Recept 👨🏻‍🍳</a></li>
+    <li class="li-recept"><a href="nyhetsbrev.html" class="nav-a">Veckomeny 📅</a></li>
+   
+    
                
-
-            </ul>
-
-        </div>
-    </nav>
+  </ol>
+  
+</nav>
 <body>
 
    <div class="widget-container">
@@ -72,6 +42,13 @@
             <div class="widget-emoji">⏳ 60 min</div>
             <div class="widget-emoji">🎂 Bak och dessert</div>
         </div>
+        <div class="rating">
+            <div class="big-star">
+                <i class="fas fa-star">
+                    <p class="selected-rating"></p>
+                </i>
+            </div>
+        </div>
 
         <p class="widget-description">
             Chokladbollar är gött!
@@ -81,39 +58,77 @@
 
 </div>
 
+<div class="recipe-content">
 
-<h1>Ingredienser</h1>
-<label class="ingredient">
-    <input type="checkbox">
-    <span class="checkmark"></span>
+    <section class="ingredients">
+        <h2>Ingredienser</h2>
 
-    <span class="ingredient-text">1 msk smör</span>
-</label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">1 msk smör</span>
+        </label>
 
-<label class="ingredient">
-    <input type="checkbox">
-    <span class="checkmark"></span>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">2 dl socker</span>
+        </label>
 
-    <span class="ingredient-text">2 dl strösocker</span>
-</label>
-<label class="ingredient">
-    <input type="checkbox">
-    <span class="checkmark"></span>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">3 msk kakao</span>
+        </label>
+        
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">1½ tsk vaniljsocker</span>
+        </label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">2 msk starkt kaffe, typ espresso</span>
+        </label>
+    </section>
 
-    <span class="ingredient-text">3 dl havregryn</span>
-</label>
-<label class="ingredient">
-    <input type="checkbox">
-    <span class="checkmark"></span>
 
-    <span class="ingredient-text">3 msk kakao</span>
-</label>
-<label class="ingredient">
-    <input type="checkbox">
-    <span class="checkmark"></span>
+    
+      <section class="ingredients">
+        <h2>Gör så här</h2>
 
-    <span class="ingredient-text">3 msk kallt starkt kaffe</span>
-</label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Rör smör, socker, kakao och vaniljsocker poröst. Gärna med en elvisp eller köksassistent. </span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Tillsätt resterande ingredienser och arbeta ihop till en jämn smet med händerna.</span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Låt smeten stå i 15 minuter så den sväller lite. </span>
+        </label>
+        
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Rulla bollar av smeten och rulla sedan dessa i pärlsocker eller kokosflingor. </span>
+        </label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Ställ i kyl för att stelna, men låt gärna rumstempereras innan servering. </span>
+        </label>
+    </section>
+
+</div>
 
 
 </body>

@@ -1,3 +1,38 @@
+.nav-recept{
+    border-bottom: 1px solid black;
+    background-color: #edf0eb;
+}
+
+.form-recept{
+    border-radius: 5px;
+}
+
+.search-box{
+    position: relative;
+  width: 400px;
+
+}
+
+.navbar{
+    background: #57b54a;
+    font-family: Poppins, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    color:white;
+    height: 50px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    
+}
 
 .ingredient {
     display: flex;
@@ -19,9 +54,10 @@
 .checkmark {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 
     border: 2px solid #888;
-    border-radius: 6px;
+    border-radius: 50%;
 
     display: flex;
     align-items: center;
@@ -70,6 +106,8 @@
     padding-left: 15px;
     color:white
 }
+
+
 
 
 
@@ -146,3 +184,97 @@
 .widget-emoji {
     font-size: 20px;
 }
+
+.li-recept {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-btn{
+  border-radius:5px;
+  color: white;
+}
+
+.nav-a{
+     display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+
+    background-color: rgb(223, 207, 207);
+    color: rgb(139, 77, 94);
+
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.instruction input:checked + label {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.instruction input:checked + label {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.ingredient-text {
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .recipe-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

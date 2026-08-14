@@ -7,74 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<header th:fragment="header" xmlns:sec="http://www.w3.org/1999/xhtml">
-    <nav class="navbar">
-        <div class="navdiv">
-
-            <div class="logo">
-                <a href="index.html">Hem🏡</a>
-            </div>
-
-            <div id="content-area"></div>
-
-            <div class="search-container">
-                <form
-                >
-                    <input
-                            type="text"
-                            name="searchTerm"
-                            placeholder="Sök..."
-                    >
-
-                    <button type="submit">
-                        🔎</i>
-                    </button>
-                </form>
-            </div>
-
-            <ul class="nav-links">
-                <li class="nav-buttons"><a  class="nav-a">Home</a></li>
-                <li>
-                    <a th:href="@{/contact}" class="nav-a">Contact
-                    </a>
-                </li>
-
-                <li sec:authorize="!isAuthenticated()">
-                    <a th:href="@{/login}" class="nav-a">Logga in</a>
-                </li>
-                <li>
-                    <a th:href="@{/register}" class="btn-register">Register</a>
-                </li>
-              
-
-            </ul>
-
-        </div>
-    </nav>
-</header>
-<body>
-    <nav class="nav-recept">
+<nav class="nav-recept">
   <ol>
-    <li class="li-recept"><a href="recept.html" class="li-a">Recept</a></li>
-    <li class="li-recept"><a href="nyhetsbrev.html" class="li-a">Nyhetsbrev  </a></li>
+     <li class="li-recept">
+                    <a href="index.html" class="nav-a">Home🏡</a></li>
+                <li class="li-recept">
+    <li class="li-recept"><a href="recept.html" class="nav-a">Recept 👨🏻‍🍳</a></li>
+    <li class="li-recept"><a href="nyhetsbrev.html" class="nav-a">Veckomeny 📅</a></li>
+   
+    
+               
   </ol>
+  
 </nav>
+
+<body>
+    
 <section class="hero">
     <div class="hero-content">
 <img src="">
 <h2>Välkommen till receptsidan!</h2>
-<div class="search-box">
-<form class="form-recept"cion="action_page.php">
+  <div class="search-box">
+<form class="form-recept" action="action_page.php">
   <input type="text" placeholder="Sök efter recept" name="search">
-  <button type="submit"><i class="fa fa-search">
+  <button type="submit" class="search-btn"><i class="fa fa-search">
   </i></button>
 </form>
+    </div>
 
-<a href="chokladbollar.html" class="li-a">Chokladbollar</a>
-<a href="pannkakor.html" class="li-a">Pannkakor</a>
+
+<a href="chokladbollar.html" class="body-a">Chokladbollar</a>
+<a href="pannkakor.html" class="body-a">Pannkakor</a>
 <div>
 </div>
 </div>
 </section>
+
+<script src="index.js"></script>
 </body>
 </html>
