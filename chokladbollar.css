@@ -15,7 +15,7 @@
 
 .navbar{
     background: #57b54a;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     padding-right: 15px;
     padding-left: 15px;
     color:white;
@@ -101,7 +101,7 @@
 
 .navbar{
     background: #57b54a;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     padding-right: 15px;
     padding-left: 15px;
     color:white
@@ -170,7 +170,7 @@
 
     color: rgb(14, 10, 10);
     font-size: 40px;
-    font-family: "Roboto Serif", Georgia, serif;
+    font-family: "Roboto Serif", Georgia;
 }
 
 .widget-info {
@@ -245,6 +245,193 @@
 .ingredient-text {
     line-height: 1.5;
 }
+
+.star{
+    font-size: 30px;
+    color: #bbc528;
+    cursor: pointer;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.rating{
+    display: flex;
+    
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+}
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    inset: 0;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    z-index: 999;
+}
+
+
+
+.modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-inner {
+    width: 320px;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+.rating-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+.rating-options button {
+    width: auto;
+    min-width: 0;
+    padding: 5px 10px;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    color: #cfab55;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.close {
+    margin-top: 10px;
+
+    width: 120px;
+
+    border-radius: 10px;
+    background-color: #eee;
+    color: rgb(138, 105, 65);
+}
+
+.close:hover {
+    color: #a7580f;
+}
+
+
+
+.rating-div h2 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    color:black;
+}
+
+.rating-options button:hover {
+    transform: scale(1.05);
+    background-color: #fff8e7;
+}
+
+.rating-div {
+    width: 280px;
+    min-height: 250px;
+
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.close,
+.submit-rating {
+    width: 120px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.close {
+    background-color: #eee;
+    color: rgb(138, 105, 65);
+}
+
+.submit-rating {
+    background-color: rgb(138, 105, 65);
+    color: rgb(153, 113, 113);
+}
+
+.close:hover,
+.submit-rating:hover {
+    opacity: 0.85;
+}
+
+.open {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+
+    padding: 10px 18px;
+
+    
+    border: none;
+    border-radius: 20px;
+
+    color: #e6a817 !important;
+    font-size: 30px !important;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.open:hover,
+.open:focus-visible {
+    border-color: #a7a7a7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(247, 181, 0, 0.2);
+}
+
+.big-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 768px) {
     .recipe-content {
