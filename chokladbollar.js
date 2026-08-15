@@ -44,3 +44,4 @@ localStorage.setItem(
 
 const average =
     ratingData.totalStars / ratingData.totalVotes;
+
