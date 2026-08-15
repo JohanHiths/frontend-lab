@@ -36,6 +36,7 @@
     <div class="widget-right">
 
         <h1 class="widget-h1">Chokladbollar</h1>
+        <p>Chokladbollar är gött</p>
 
         <div class="widget-info">
             <div class="widget-emoji">🍳 10 stycken</div>
@@ -43,34 +44,37 @@
             <div class="widget-emoji">🎂 Bak och dessert</div>
         </div>
       
-       <div class="rating" aria-label="Betyg">
-            <div class="big-star">
-                <button type="button" class="open" id="open" aria-label="Öppna betygsval">⭐⭐⭐⭐⭐</button>
-                    <span id="rating-average">0.0</span>
-                    <span id="rating-count">(0)</span>
-            </div>
+      <div class="rating">
+    <button class="open" id="open">
+        ⭐⭐⭐⭐⭐
+    </button>
+    <span id="rating-average">0.0</span>
+    <span id="rating-count">(0)</span>
+</div>
+           
         </div>
 
         <div class="modal" id="modal">
           <div class="rating-options">
             <div class="rating-div">
             <h2>Sätt betyg</h2>
-    <button class="rating-button" title="Usch">⭐</button>
-    <button class="rating-button" title="Njae">⭐⭐</button>
-    <button  class="rating-button"title="OK">⭐⭐⭐</button>
-    <button class="rating-button" title="Grymt">⭐⭐⭐⭐</button>
-    <button  class="rating-button"title="Perfekt">⭐⭐⭐⭐⭐</button>
+      <button data-rating="1">⭐</button>
+    <button data-rating="2">⭐⭐</button>
+    <button data-rating="3">⭐⭐⭐</button>
+    <button data-rating="4">⭐⭐⭐⭐</button>
+    <button data-rating="5">⭐⭐⭐⭐⭐</button>
     <button class="close" id="close" >Avbryt</button>
-     <button class="submit-rating" id="submit-rating">Sätt betyg</button>
+     <button class="submit-rating" id="submit-rating">
+    Sätt betyg
+</button>
     </div>
 </div>
         </div>
 
-        <p class="widget-description">
-            Chokladbollar är gött!
-        </p>
+       
 
     </div>
+    
 
 </div>
 
@@ -146,6 +150,6 @@
 
 </div>
 
-<script src="index.js"></script>
+<script src="chokladbollar.js"></script>
 </body>
 </html>
