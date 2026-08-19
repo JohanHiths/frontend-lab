@@ -21,6 +21,8 @@
   </ol>
   
 </nav>
+
+
 <body>
 
    <div class="widget-container">
@@ -48,31 +50,83 @@
     <button class="open" id="open">
         ⭐⭐⭐⭐⭐
     </button>
+
     <span id="rating-average">0.0</span>
     <span id="rating-count">(0)</span>
 </div>
-           
+  
+  <button class="comment-btn" id="comment-btn">
+    <img
+        src="bilder/comment-bubble.svg"
+        width="16"
+        height="16"
+        alt=""
+    >
+
+    <span>Skriv en kommentar</span>
+
+    <span id="comment-count">0 kommentarer</span>
+</button>
+        
+
+</div>    <div class="comment-modal" id="comment-modal">
+ <div class="comment-modal-inner">
+
+        <h2>Skriv en kommentar</h2>
+
+        <label class="label-comment" for="comment-area">
+            Din kommentar
+        </label>
+
+        <textarea
+            class="comment-area"
+            id="comment-area"
+            placeholder="Skriv en kommentar..."
+        ></textarea>
+
+        <div class="comment-actions">
+            <button class="comment-cancel" id="comment-cancel">
+                Avbryt
+            </button>
+
+            <button class="comment-submit" id="comment-submit">
+                Skicka
+            </button>
+        </div>
+
+        <p class="comment-message" id="comment-message"></p>
+
+    </div>
+   
+
+</div>
+
+
+           </div>
         </div>
 
         <div class="modal" id="modal">
           <div class="rating-options">
             <div class="rating-div">
             <h2>Sätt betyg</h2>
-      <button data-rating="1">⭐</button>
-    <button data-rating="2">⭐⭐</button>
-    <button data-rating="3">⭐⭐⭐</button>
-    <button data-rating="4">⭐⭐⭐⭐</button>
-    <button data-rating="5">⭐⭐⭐⭐⭐</button>
+          <button type="button" data-rating="1">⭐</button>
+    <button type="button" data-rating="2">⭐⭐</button>
+    <button type="button" data-rating="3">⭐⭐⭐</button>
+    <button type="button" data-rating="4">⭐⭐⭐⭐</button>
+    <button type="button" data-rating="5">⭐⭐⭐⭐⭐</button>
     <button class="close" id="close" >Avbryt</button>
+    
      <button class="submit-rating" id="submit-rating">
     Sätt betyg
 </button>
+
+<div class="rating-message" id="rating-message"></div>
+
     </div>
 </div>
+
         </div>
-
-       
-
+        
     </div>
     
 
@@ -149,6 +203,19 @@
     </section>
 
 </div>
+
+<section class="comments-section">
+
+    <h2>Kommentarer</h2>
+
+    <div id="comments-list"></div>
+
+
+    <button class="clear-comments" id="clear-comments">
+        Rensa kommentarer
+    </button>
+
+</section>
 
 <script src="chokladbollar.js"></script>
 </body>
