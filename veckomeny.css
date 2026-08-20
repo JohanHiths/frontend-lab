@@ -1,14 +1,7 @@
 
 .nav-recept{
-    
+    border-bottom: 1px solid black;
     background-color: #edf0eb;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-    
 }
 
 .form-recept{
@@ -27,7 +20,7 @@
     padding-right: 15px;
     padding-left: 15px;
     color:white;
-    
+    height: 50px;
 }
 
 .navdiv{
@@ -155,7 +148,19 @@ input:focus {
 
 }
 
-
+.meny-search-container{
+  
+ 
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color:darkgreen;
+  border-color:darkgreen;
+}
 
 .menu-search-container input {
   width: 100%;
@@ -180,10 +185,13 @@ input:focus {
     padding: 0 20px;
 }
 
-.recipes > h2 {
+
+
+.week-h2{
     text-align: center;
     color: rgb(131, 85, 97);
     margin-bottom: 30px;
+    font-size:40px;
 }
 
 #recipe-list {

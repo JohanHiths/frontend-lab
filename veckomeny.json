@@ -1,0 +1,37 @@
+[
+    {
+        "vecka": 34,
+        "dagar": [
+            {
+                "dag": "Måndag",
+                "recept": "Chokladbollar",
+                "url": "chokladbollar.html"
+            },
+            {
+                "dag": "Tisdag",
+                "recept": "Pannkakor",
+                "url": "pannkakor.html"
+            },
+            {
+                "dag": "Onsdag",
+                "recept": "Grillad lax",
+                "url": "lax.html"
+            }
+        ]
+    },
+    {
+        "vecka": 35,
+        "dagar": [
+            {
+                "dag": "Måndag",
+                "recept": "Sushi",
+                "url": "sushi.html"
+            },
+            {
+                "dag": "Tisdag",
+                "recept": "Snish kebab",
+                "url": "snish-kebab.html"
+            }
+        ]
+    }
+]
