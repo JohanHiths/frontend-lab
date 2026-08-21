@@ -1,0 +1,51 @@
+[
+    {
+        "namn": "Chokladbollar",
+        "kategori": "Bak och dessert",
+        "tid": "60 min",
+        "portioner": 10,
+        "bild": "bilder/recept-chokladboll-scaled.jpg",
+        "url": "chokladbollar.html"
+    },
+    {
+        "namn": "Pannkakor",
+        "kategori": "Frukost",
+        "tid": "30 min",
+        "portioner": 4,
+        "bild": "bilder/pannkaka-ny.jpg",
+        "url": "pannkakor.html"
+    },
+    {
+        "namn": "Grillad lax",
+        "kategori": "lunch",
+        "tid": "35 min",
+        "portioner": 2,
+        "bild": "bilder/grillad-lax-med-ortmajonnas-och-farskpotatis.png.jpg",
+        "url": "lax.html"
+    },
+     {
+        "namn": "Snish kebab",
+        "kategori": "middag",
+        "tid": "25 min",
+        "portioner": 2,
+        "bild": "bilder/kebab.jpg",
+        "url": "kebab.html"
+    },
+     {
+        "namn": "Sushi",
+        "kategori": "lunch",
+        "tid": "20 min",
+        "portioner": 1,
+        "bild": "bilder/sushi.jpg",
+        "url": "sushi.html"
+    },
+    {
+        "namn": "pasta",
+        "kategori": "lunch",
+        "tid": "20 min",
+        "portioner": 1,
+        "bild": "bilder/pasta.jpg",
+        "url": "pasta.html"
+    }
+]
+

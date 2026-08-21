@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chokladbollar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+</head>
+  <nav class="nav-recept">
+  <ol>
+     <li class="li-recept">
+                    <a href="index.html" class="nav-a">Home🏡</a></li>
+                <li class="li-recept">
+    <li class="li-recept"><a href="recept.html" class="nav-a">Recept 👨🏻‍🍳</a></li>
+    <li class="li-recept"><a href="nyhetsbrev.html" class="nav-a">Veckomeny 📅</a></li>
+   
+    
+               
+  </ol>
+  
+</nav>
+
+
+<body>
+
+   <div class="widget-container">
+
+    <div class="widget-left">
+        <img
+            src="bilder/recept-chokladboll-scaled.jpg"
+            alt="Chokladbollar"
+            class="widget-image"
+        >
+    </div>
+
+    <div class="widget-right">
+
+        <h1 class="widget-h1">Chokladbollar</h1>
+        <p>Chokladbollar är gött</p>
+
+        <div class="widget-info">
+            <div class="widget-emoji">🍳 10 stycken</div>
+            <div class="widget-emoji">⏳ 60 min</div>
+            <div class="widget-emoji">🎂 Bak och dessert</div>
+        </div>
+      
+      <div class="rating">
+    <button class="open" id="open">
+        ⭐⭐⭐⭐⭐
+    </button>
+
+    <span id="rating-average">0.0</span>
+    <span id="rating-count">(0)</span>
+</div>
+  
+  <button class="comment-btn" id="comment-btn">
+    <img
+        src="bilder/comment-bubble.svg"
+        width="16"
+        height="16"
+        alt=""
+    >
+
+    <span>Skriv en kommentar</span>
+
+    <span id="comment-count">0 kommentarer</span>
+</button>
+        
+
+</div>    <div class="comment-modal" id="comment-modal">
+ <div class="comment-modal-inner">
+
+        <h2>Skriv en kommentar</h2>
+
+        <label class="label-comment" for="comment-area">
+            Din kommentar
+        </label>
+
+        <textarea
+            class="comment-area"
+            id="comment-area"
+            placeholder="Skriv en kommentar..."
+        ></textarea>
+
+        <div class="comment-actions">
+            <button class="comment-cancel" id="comment-cancel">
+                Avbryt
+            </button>
+
+            <button class="comment-submit" id="comment-submit">
+                Skicka
+            </button>
+        </div>
+
+        <p class="comment-message" id="comment-message"></p>
+
+    </div>
+   
+
+</div>
+
+
+           </div>
+        </div>
+
+        <div class="modal" id="modal">
+          <div class="rating-options">
+            <div class="rating-div">
+            <h2>Sätt betyg</h2>
+          <button type="button" data-rating="1">⭐</button>
+    <button type="button" data-rating="2">⭐⭐</button>
+    <button type="button" data-rating="3">⭐⭐⭐</button>
+    <button type="button" data-rating="4">⭐⭐⭐⭐</button>
+    <button type="button" data-rating="5">⭐⭐⭐⭐⭐</button>
+    <button class="close" id="close" >Avbryt</button>
+    
+     <button class="submit-rating" id="submit-rating">
+    Sätt betyg
+</button>
+
+<div class="rating-message" id="rating-message"></div>
+
+    </div>
+</div>
+
+        </div>
+        
+    </div>
+    
+
+</div>
+
+<div class="recipe-content">
+
+    <section class="ingredients">
+        <h2>Ingredienser</h2>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">1 msk smör</span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">2 dl socker</span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">3 msk kakao</span>
+        </label>
+        
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">1½ tsk vaniljsocker</span>
+        </label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">2 msk starkt kaffe, typ espresso</span>
+        </label>
+    </section>
+
+
+    
+      <section class="ingredients">
+        <h2>Gör så här</h2>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Rör smör, socker, kakao och vaniljsocker poröst. Gärna med en elvisp eller köksassistent. </span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Tillsätt resterande ingredienser och arbeta ihop till en jämn smet med händerna.</span>
+        </label>
+
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Låt smeten stå i 15 minuter så den sväller lite. </span>
+        </label>
+        
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Rulla bollar av smeten och rulla sedan dessa i pärlsocker eller kokosflingor. </span>
+        </label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">Ställ i kyl för att stelna, men låt gärna rumstempereras innan servering. </span>
+        </label>
+    </section>
+
+</div>
+
+<section class="comments-section">
+
+    <h2>Kommentarer</h2>
+
+    <div id="comments-list"></div>
+
+
+    <button class="clear-comments" id="clear-comments">
+        Rensa kommentarer
+    </button>
+
+</section>
+
+<script src="chokladbollar.js"></script>
+</body>
+</html>
