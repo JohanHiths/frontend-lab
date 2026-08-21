@@ -114,7 +114,7 @@ if (!comments) {
 
 commentSubmit.addEventListener("click", () => {
 
-    const text = commentArea.value.trim();
+    const text = commentArea.value;
 
     if (text === "") {
         commentMessage.textContent =

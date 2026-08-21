@@ -3,7 +3,7 @@
     
     background-color: #edf0eb;
 
- 
+  
     
 }
 
@@ -170,19 +170,19 @@ input:focus {
 
 
 
-.weekly-menu {
+.recipes {
     max-width: 1000px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-.wwekly-menu > h2 {
+.recipes > h2 {
     text-align: center;
     color: rgb(131, 85, 97);
     margin-bottom: 30px;
 }
 
-#menu-widget {
+#recipe-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
