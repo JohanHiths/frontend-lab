@@ -73,10 +73,10 @@ submitRating.addEventListener("click", () => {
 });
 
 
-const ratingKey = "chokladbollarRating";
+const ratingKey = "snabbNudlarRating";
 
 let ratingData = JSON.parse(
-    localStorage.getItem("chokladbollarRating")
+    localStorage.getItem("snabbNudlarRating")
 );
 
 if (!ratingData) {

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="chokladbollar.css">
+    <link rel="stylesheet" href="css/chokladbollar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
 </head>
-<nav class="nav-recept">
+  <nav class="nav-recept">
   <ol>
      <li class="li-recept">
                     <a href="index.html" class="nav-a">Home🏡</a></li>
@@ -21,7 +21,8 @@
   </ol>
   
 </nav>
-  
+
+
 <body>
 
    <div class="widget-container">
@@ -36,19 +37,98 @@
 
     <div class="widget-right">
 
-        <h1 class="widget-h1">Lax</h1>
+        <h1 class="widget-h1">Lax🐟</h1>
+        
 
         <div class="widget-info">
-            <div class="widget-emoji">🍳 6 stycken</div>
+            <div class="widget-emoji">1 10 stycken</div>
             <div class="widget-emoji">⏳ 30 min</div>
-            <div class="widget-emoji">🎂 Bak och dessert</div>
+            <div class="widget-emoji">Lunch</div>
+        </div>
+      
+      <div class="rating">
+    <button class="open" id="open">
+        ⭐⭐⭐⭐⭐
+    </button>
+
+    <span id="rating-average">0.0</span>
+    <span id="rating-count">(0)</span>
+</div>
+  
+  <button class="comment-btn" id="comment-btn">
+    <img
+        src="bilder/comment-bubble.svg"
+        width="16"
+        height="16"
+        alt=""
+    >
+
+    <span>Skriv en kommentar</span>
+
+    <span id="comment-count">0 kommentarer</span>
+</button>
+        
+
+</div>    <div class="comment-modal" id="comment-modal">
+ <div class="comment-modal-inner">
+
+        <h2>Skriv en kommentar</h2>
+
+        <label class="label-comment" for="comment-area">
+            Din kommentar
+        </label>
+
+        <textarea
+            class="comment-area"
+            id="comment-area"
+            placeholder="Skriv en kommentar..."
+        ></textarea>
+
+        <div class="comment-actions">
+            <button class="comment-cancel" id="comment-cancel">
+                Avbryt
+            </button>
+
+            <button class="comment-submit" id="comment-submit">
+                Skicka
+            </button>
         </div>
 
-        <p class="widget-description">
-            Pannkakor är gött!
-        </p>
+        <p class="comment-message" id="comment-message"></p>
 
     </div>
+   
+
+</div>
+
+
+           </div>
+        </div>
+
+        <div class="modal" id="modal">
+          <div class="rating-options">
+            <div class="rating-div">
+            <h2>Sätt betyg</h2>
+          <button type="button" data-rating="1">⭐</button>
+    <button type="button" data-rating="2">⭐⭐</button>
+    <button type="button" data-rating="3">⭐⭐⭐</button>
+    <button type="button" data-rating="4">⭐⭐⭐⭐</button>
+    <button type="button" data-rating="5">⭐⭐⭐⭐⭐</button>
+    <button class="close" id="close" >Avbryt</button>
+    
+     <button class="submit-rating" id="submit-rating">
+    Sätt betyg
+</button>
+
+<div class="rating-message" id="rating-message"></div>
+
+    </div>
+</div>
+
+        </div>
+        
+    </div>
+    
 
 </div>
 
@@ -60,35 +140,30 @@
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">2 1/2 dl vetemjöl</span>
+            <span class="ingredient-text">ca 1200 g lax i bit med skinn</span>
         </label>
 
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">1/2 tsk salt</span>
+            <span class="ingredient-text">3 msk salt</span>
         </label>
 
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">6 dl mjölk</span>
+            <span class="ingredient-text">3 msk farinsocker</span>
         </label>
         
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">3 ägg</span>
+            <span class="ingredient-text">4 dl rökflis</span>
         </label>
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">smör (till stekning)</span>
-        </label>
-          <label class="ingredient">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <span class="ingredient-text">sylt, bär eller frukt till servering</span>
+            <span class="ingredient-text">35 briketter</span>
         </label>
     </section>
 
@@ -100,30 +175,63 @@
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">En sats på 4 portioner blir 8-10 pannkakor beroende på storleken på stekpannan. </span>
+            <span class="ingredient-text"> Lägg laxen på skinnsidan i en form eller på ett fat. Strö ett jämnt lager salt och sedan socker över laxen. Täck över med plastfolie och rimma i 10 timmar i kylskåpet.</span>
         </label>
 
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">Blanda mjöl och salt i en bunke. Vispa i hälften av mjölken och vispa till en slät smet. Vispa i resten av mjölken och äggen. Låt smeten vila ca 10 minuter.</span>
+            <span class="ingredient-text"> Ta ut laxen ur kylskåpet och skölj bort salt och socker under rinnande kallt vatten. Torka laxen försiktigt med hushållspapper och låt den torka i kylen utan plast i ca 2 timmar.</span>
         </label>
 
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna. </span>
+            <span class="ingredient-text">Blötlägg rökflisen och låt dra i 10 minuter. Tänd grillen med briketterna.</span>
         </label>
         
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text">Servera med sylt och grädde, bär eller frukt.</span>
+            <span class="ingredient-text">Skär laxen i 2 bitar, så att den får plats på grillen. Lägg laxen på bakplåtspapper och lägg gärna på en grillbricka eller grillplanka. Det går också bra att lägga den på ett dubbelvikt bakplåtspapper direkt på gallret.</span>
         </label>
-    
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text"> Häll ut briketterna i en hög på grillens ena sida (vi har använt en 58 cm klotgrill). Låt rökflisen rinna av något och lägg på hälften på briketterna. Lägg laxen på den sida av grillen som inte har briketter under sig. Sätt på locket och rök laxen på ca 150°C i först 10 minuter. Använd spjällen för att kontrollera värmen.</span>
+        </label>
+        <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text"> Lägg därefter på resten av rökflisen och rök ytterligare ca 10 minuter eller tills laxen har en innertemperatur på 54°C.</span>
+        </label>
+         <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text"> Låt laxen svalna och för bästa smak stå i kylen i ca 8 timmar.</span>
+        </label>
+         <label class="ingredient">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            <span class="ingredient-text">  Här finns tips på goda såser att servera till lax.</span>
+        </label>
     </section>
 
 </div>
 
+<section class="comments-section">
+
+    <h2>Kommentarer</h2>
+
+    <div id="comments-list"></div>
+
+
+    <button class="clear-comments" id="clear-comments">
+        Rensa kommentarer
+    </button>
+
+</section>
+
+<script src="lax.js"></script>
 </body>
 </html>

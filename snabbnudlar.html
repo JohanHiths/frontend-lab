@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
 </head>
-  <nav class="nav-recept">
+<nav class="nav-recept">
   <ol>
      <li class="li-recept">
                     <a href="index.html" class="nav-a">Home🏡</a></li>
@@ -21,117 +21,36 @@
   </ol>
   
 </nav>
-
-
+  
 <body>
 
    <div class="widget-container">
 
     <div class="widget-left">
         <img
-            src="bilder/pasta.jpg"
-            alt="Chokladbollar"
+            src="bilder/snabbnudlar.jpg"
+            alt="Pasta"
             class="widget-image"
         >
     </div>
 
     <div class="widget-right">
 
-        <h1 class="widget-h1">Pasta</h1>
-       
+        <h1 class="widget-h1">Snabbnudlar</h1>
 
         <div class="widget-info">
-            <div class="widget-emoji">🍳 10 stycken</div>
-            <div class="widget-emoji">⏳ 60 min</div>
-            <div class="widget-emoji">🎂 Bak och dessert</div>
-        </div>
-      
-      <div class="rating">
-    <button class="open" id="open">
-        ⭐⭐⭐⭐⭐
-    </button>
-
-    <span id="rating-average">0.0</span>
-    <span id="rating-count">(0)</span>
-</div>
-  
-  <button class="comment-btn" id="comment-btn">
-    <img
-        src="bilder/comment-bubble.svg"
-        width="16"
-        height="16"
-        alt=""
-    >
-
-    <span>Skriv en kommentar</span>
-
-    <span id="comment-count">0 kommentarer</span>
-</button>
-        
-
-</div>    <div class="comment-modal" id="comment-modal">
- <div class="comment-modal-inner">
-
-        <h2>Skriv en kommentar</h2>
-
-        <label class="label-comment" for="comment-area">
-            Din kommentar
-        </label>
-
-        <textarea
-            class="comment-area"
-            id="comment-area"
-            placeholder="Skriv en kommentar..."
-        ></textarea>
-
-        <div class="comment-actions">
-            <button class="comment-cancel" id="comment-cancel">
-                Avbryt
-            </button>
-
-            <button class="comment-submit" id="comment-submit">
-                Skicka
-            </button>
+            <div class="widget-emoji">🍳 1 stycken</div>
+            <div class="widget-emoji">⏳ 30 min</div>
+            <div class="widget-emoji">🍽️ Lunch</div>
         </div>
 
-        <p class="comment-message" id="comment-message"></p>
+        <p class="widget-description">
+            Pasta🍝🍝🍜👩🏻‍🍳🥘!
+        </p>
 
     </div>
-   
 
 </div>
-
-
-           </div>
-        </div>
-
-        <div class="modal" id="modal">
-          <div class="rating-options">
-            <div class="rating-div">
-            <h2>Sätt betyg</h2>
-          <button type="button" data-rating="1">⭐</button>
-    <button type="button" data-rating="2">⭐⭐</button>
-    <button type="button" data-rating="3">⭐⭐⭐</button>
-    <button type="button" data-rating="4">⭐⭐⭐⭐</button>
-    <button type="button" data-rating="5">⭐⭐⭐⭐⭐</button>
-    <button class="close" id="close" >Avbryt</button>
-    
-     <button class="submit-rating" id="submit-rating">
-    Sätt betyg
-</button>
-
-<div class="rating-message" id="rating-message"></div>
-
-    </div>
-</div>
-
-        </div>
-        
-    </div>
-    
-
-</div>
-
 
 <div class="recipe-content">
 
@@ -239,27 +158,12 @@
         <label class="ingredient">
             <input type="checkbox">
             <span class="checkmark"></span>
-            <span class="ingredient-text"> Koka pastan enligt anvisningen på förpackningen.</span>
+            <span class="ingredient-text"> Koka spaghettin enligt anvisningen på förpackningen.</span>
         </label>
     
     </section>
 
 </div>
-
-
-<section class="comments-section">
-
-    <h2>Kommentarer</h2>
-
-    <div id="comments-list"></div>
-
-
-    <button class="clear-comments" id="clear-comments">
-        Rensa kommentarer
-    </button>
-
-</section>
-
-<script src="pasta.js"></script>
+<script src="snabbnudlar.js"></script>
 </body>
 </html>
