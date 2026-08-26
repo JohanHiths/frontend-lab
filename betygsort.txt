@@ -1,0 +1,29 @@
+const popularaRecept = recept
+    .map(recipe => {
+
+        const savedRating = localStorage.getItem(
+            `${recipe.id}Rating`
+        );
+
+        const rating = savedRating
+            ? JSON.parse(savedRating)
+            : {
+                totalVotes: 0,
+                totalStars: 0
+            };
+
+        const average = rating.totalVotes > 0
+            ? rating.totalStars / rating.totalVotes
+            : 0;
+
+        const score =
+            average * Math.log10(rating.totalVotes + 1);
+
+        return {
+            ...recipe,
+            average,
+            totalVotes: rating.totalVotes,
+            score
+        };
+    })
+    .sort((a, b) => b.score - a.score);

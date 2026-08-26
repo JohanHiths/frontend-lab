@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="chokladbollar.css">
+    <link rel="stylesheet" href="css/chokladbollar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
 </head>
-<nav class="nav-recept">
+  <nav class="nav-recept">
   <ol>
      <li class="li-recept">
                     <a href="index.html" class="nav-a">Home🏡</a></li>
@@ -21,7 +21,8 @@
   </ol>
   
 </nav>
-  
+
+
 <body>
 
    <div class="widget-container">
@@ -37,20 +38,100 @@
     <div class="widget-right">
 
         <h1 class="widget-h1">Pannkakor</h1>
+        <p>Pannkakor är gött</p>
 
         <div class="widget-info">
-            <div class="widget-emoji">🍳 6 stycken</div>
-            <div class="widget-emoji">⏳ 30 min</div>
+            <div class="widget-emoji">🍳 10 stycken</div>
+            <div class="widget-emoji">⏳ 60 min</div>
             <div class="widget-emoji">🎂 Bak och dessert</div>
         </div>
+      
+      <div class="rating">
+    <button class="open" id="open">
+        ⭐⭐⭐⭐⭐
+    </button>
 
-        <p class="widget-description">
-            Pannkakor är gött!
-        </p>
+    <span id="rating-average">0.0</span>
+    <span id="rating-count">(0)</span>
+</div>
+  
+  <button class="comment-btn" id="comment-btn">
+    <img
+        src="bilder/comment-bubble.svg"
+        width="16"
+        height="16"
+        alt=""
+    >
+
+    <span>Skriv en kommentar</span>
+
+    <span id="comment-count">0 kommentarer</span>
+</button>
+        
+
+</div>    <div class="comment-modal" id="comment-modal">
+ <div class="comment-modal-inner">
+
+        <h2>Skriv en kommentar</h2>
+
+        <label class="label-comment" for="comment-area">
+            Din kommentar
+        </label>
+
+        <textarea
+            class="comment-area"
+            id="comment-area"
+            placeholder="Skriv en kommentar..."
+        ></textarea>
+
+        <div class="comment-actions">
+            <button class="comment-cancel" id="comment-cancel">
+                Avbryt
+            </button>
+
+            <button class="comment-submit" id="comment-submit">
+                Skicka
+            </button>
+        </div>
+
+        <p class="comment-message" id="comment-message"></p>
 
     </div>
+   
 
 </div>
+
+
+           </div>
+        </div>
+
+        <div class="modal" id="modal">
+          <div class="rating-options">
+            <div class="rating-div">
+            <h2>Sätt betyg</h2>
+          <button type="button" data-rating="1">⭐</button>
+    <button type="button" data-rating="2">⭐⭐</button>
+    <button type="button" data-rating="3">⭐⭐⭐</button>
+    <button type="button" data-rating="4">⭐⭐⭐⭐</button>
+    <button type="button" data-rating="5">⭐⭐⭐⭐⭐</button>
+    <button class="close" id="close" >Avbryt</button>
+    
+     <button class="submit-rating" id="submit-rating">
+    Sätt betyg
+</button>
+
+<div class="rating-message" id="rating-message"></div>
+
+    </div>
+</div>
+
+        </div>
+        
+    </div>
+    
+
+</div>
+
 
 <div class="recipe-content">
 
@@ -125,5 +206,19 @@
 
 </div>
 
+<section class="comments-section">
+
+    <h2>Kommentarer</h2>
+
+    <div id="comments-list"></div>
+
+
+    <button class="clear-comments" id="clear-comments">
+        Rensa kommentarer
+    </button>
+
+</section>
+
+<script src="pannkakor.js"></script>
 </body>
 </html>

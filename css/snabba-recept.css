@@ -1,10 +1,17 @@
 
-.nav-recept{
-    
+.nav-recept {
     background-color: #edf0eb;
+    margin: 0;
+    padding: 0;
+}
 
- 
-    
+.nav-recept ol {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-recept{
@@ -38,51 +45,15 @@
     
 }
 
-.body-a{
-   display: inline-block;
-    padding: 12px 20px;
-    margin: 5px;
-
-    background-color: rgb(223, 207, 207);
-    color: rgb(131, 85, 97);
-
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 20px;
-}
 
 
-.search-box input {
-  width: 100%;
-  height: 48px;
-  padding: 0 50px 0 16px;
-  border: 1px solid #ccc;
-  border-radius: 24px;
-  font-size: 16px;
-  box-sizing: border-box;
-  
-  
-}
 
 h2{
     text-align: center;
     color: black;
 }
 
-.search-box .search-btn {
-  position: absolute;
-  right: 6px;
-  top: 40%;
-  transform: translateY(-50%);
-  width: 38px;
-  height: 38px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  font-size: 20px;
-  color:darkgreen;
-  border-color:darkgreen;
-}
+
 input:focus {
     border: 3px solid #274e02;
     outline: none;
@@ -94,36 +65,13 @@ input:focus {
   color: white;
 }
 
-.hero{
-      position: relative;
 
-    min-height: 400px;
-
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.35),
-                        rgba(0, 0, 0, 0.35)),
-        url("/bilder/premium_vector-1713364393085-0fdda13ec7cd.avif");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:800px;
-    text-align: center;
-}
 
 .li-recept {
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
- 
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
 }
-
 
 .search-container {
     display: flex;
@@ -137,8 +85,9 @@ input:focus {
   color: white;
 }
 
-.nav-a{
-     display: inline-block;
+.nav-a {
+    display: inline-block;
+
     padding: 5px 15px;
     margin: 5px;
 
@@ -148,7 +97,6 @@ input:focus {
     text-decoration: none;
     font-size: 20px;
     border-radius: 20px;
-
 }
 
 
@@ -224,4 +172,12 @@ input:focus {
     border-radius: 10px;
 
     margin-bottom: 15px;
+}
+
+.snabba-recept-div{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,51 +1,76 @@
 [
     {
+         "id": "chokladbollar",
         "namn": "Chokladbollar",
         "kategori": "Bak och dessert",
-        "tid": "60 min",
+        "tid": 60,
         "portioner": 10,
         "bild": "bilder/recept-chokladboll-scaled.jpg",
         "url": "chokladbollar.html"
     },
     {
+        "id": "pannkakor",
         "namn": "Pannkakor",
         "kategori": "Frukost",
-        "tid": "30 min",
+        "tid": 30,
         "portioner": 4,
         "bild": "bilder/pannkaka-ny.jpg",
         "url": "pannkakor.html"
     },
     {
+        "id": "lax",
         "namn": "Grillad lax",
         "kategori": "lunch",
-        "tid": "35 min",
+        "tid": 35,
         "portioner": 2,
         "bild": "bilder/grillad-lax-med-ortmajonnas-och-farskpotatis.png.jpg",
         "url": "lax.html"
     },
      {
+        "id": "kebab",
         "namn": "Snish kebab",
         "kategori": "middag",
-        "tid": "25 min",
+        "tid": 25,
         "portioner": 2,
         "bild": "bilder/kebab.jpg",
         "url": "kebab.html"
     },
-     {
+     {  
+        "id": "sushi",
         "namn": "Sushi",
         "kategori": "lunch",
-        "tid": "20 min",
+        "tid": 20,
         "portioner": 1,
         "bild": "bilder/sushi.jpg",
         "url": "sushi.html"
     },
-    {
+    {   
+        "id": "pasta",
         "namn": "pasta",
         "kategori": "lunch",
-        "tid": "20 min",
+        "tid": 20,
         "portioner": 1,
         "bild": "bilder/pasta.jpg",
         "url": "pasta.html"
+    },
+    {   
+        "id": "nudlar",
+        "namn": "snabbnudlar",
+        "kategori": "kvällsmat",
+        "tid": 5,
+        "portioner": 1,
+        "bild": "bilder/snabbnudlar.jpg",
+        "url": "snabbnudlar.html"
+    },
+    {
+        "id":"hamburgare",
+        "namn": "Hamburgare",
+        "kategori": "lunch",
+        "tid": 15,
+        "portioner": 4,
+        "bild": "bilder/hamburgare.jpg",
+        "url": "hamburgare.html"
     }
+
 ]
 
